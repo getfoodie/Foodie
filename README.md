@@ -1,8 +1,7 @@
 # Foodie
+![2](https://user-images.githubusercontent.com/65577867/113358339-a19cc680-9313-11eb-9c55-95c0637aba1b.jpg)
 Original App Design Project - README Template
 ===
-
-![2](https://user-images.githubusercontent.com/65577867/113358339-a19cc680-9313-11eb-9c55-95c0637aba1b.jpg)
 
 ## Table of Contents
 1. [Overview](#Overview)
