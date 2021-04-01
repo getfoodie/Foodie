@@ -113,7 +113,7 @@ Foodie allows users to decide what to eat based on what they are craving for, bu
 ### [BONUS] Digital Wireframes & Mockups
 
 ### [BONUS] Interactive Prototype
-<img src="http://g.recordit.co/Aaec9RyDxi.gif" width=600>
+<img src="http://g.recordit.co/JyBGpkpIGh.gif" width=600>
 
 ## Schema 
 [This section will be completed in Unit 9]
