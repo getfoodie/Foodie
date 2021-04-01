@@ -2,7 +2,7 @@
 Original App Design Project - README Template
 ===
 
-# APP_NAME_HERE
+# foodie, Food Wheel, 
 
 ## Table of Contents
 1. [Overview](#Overview)
@@ -12,16 +12,37 @@ Original App Design Project - README Template
 
 ## Overview
 ### Description
-[Description of your app]
+Foodie allows users to decide what to eat based on what they are craving for, but if the users have no specific food preferences, they will directly spin the wheel of mixed choices. Else they will spin the wheel based on what type of food they have chosen. After spinning the wheel, the users will be recommended to eat different foods
 
 ### App Evaluation
 [Evaluation of your app across the following attributes]
-- **Category:**
-- **Mobile:**
-- **Story:**
-- **Market:**
-- **Habit:**
-- **Scope:**
+- **Category:** Lifestyle app, more specifically for food
+- **Mobile:** Yes (Might utilize map)
+- **Story:** It allows users to decide what to eat based on what they are craving for, but if the users have no specific food preferences, they will directly spin the wheel of mixed choices. Else they will spin the wheel based on what type of food they have chosen. After spinning the wheel, the users will be recommended to eat different foods
+- **Market:** Everyone, especially for those who always have difficulty in deciding what to eat
+- **Habit:** Can be used for every meal, as many times the user want.
+
+- **Scope:** 
+
+* Using tab view (bottom nav bar) 1) Cravings Page    2) Wheel Page
+    * 1st: Asks the user what they’re craving for 
+        * Will have different options to select from             (like boxes)
+            * Protein
+            * Veggie
+            * Carbs 
+            * Drinks
+        * Option for complete random 
+            * This will bring users to a wheel with a variety of options
+    * 2nd: Wheel
+        * Add/Delete options to the wheel
+        * Time to spin
+    * 3rd: Pop up screen
+        * Will show the user the spun result
+        * Will ask if they want to respin 
+* Future Cases: 
+    * Every time the user spins, if they get an option they don’t like they can respin, the app will take this data and save it
+    * Integrating with Yelp and location API
+
 
 ## Product Spec
 
@@ -29,43 +50,64 @@ Original App Design Project - README Template
 
 **Required Must-have Stories**
 
-* [fill in your required user stories here]
-* ...
+* Questions/Craving Screen
+* Wheel
+* Results
 
 **Optional Nice-to-have Stories**
 
-* [fill in your required user stories here]
-* ...
+* Giving the user a location/place to eat based off of location or yelp API
 
 ### 2. Screen Archetypes
 
-* [list first screen here]
-   * [list associated required story here]
-   * ...
-* [list second screen here]
-   * [list associated required story here]
-   * ...
+* Question/Cravings
+   * Will ask the user what kind of food they're looking for
+       * Protein
+       * Veggie
+       * Carbs 
+       * Drinks 
+       * Option for complete random
+
+* Wheel
+   * Give users the ability to add or delete options to from the wheel
+   * Time to spin
+       * Result = Pop up screen 
+           * Will show the user the spun result
+           * Will ask if they want to respin 
 
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
 
-* [fill out your first tab]
-* [fill out your second tab]
-* [fill out your third tab]
+* Cravings
+* Wheel
 
 **Flow Navigation** (Screen to Screen)
 
-* [list first screen here]
-   * [list screen navigation here]
-   * ...
-* [list second screen here]
-   * [list screen navigation here]
-   * ...
+* Cravings
+   * Asks the user what they’re craving for
+       * Protein
+       * Veggie
+       * Carbs 
+       * Drinks 
+
+   * Option for complete random
+       * This will bring users to a wheel with a variety of options	
+       
+* Wheel
+    * Add/Delete options to the wheel
+    * Time to spin
+
+* Results Pop up screen
+    * Will show the user the spun result
+    * Will ask if they want to respin 
+
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
 <img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+
+
 
 ### [BONUS] Digital Wireframes & Mockups
 
