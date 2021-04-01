@@ -106,7 +106,7 @@ Foodie allows users to decide what to eat based on what they are craving for, bu
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
-<img src="https://github.com/getfoodie/Foodie/blob/main/FoodieLogo.png" width=600>
+<img src="file:///Users/kaileyvan/Downloads/FoodieLogo.png" width=600>
 
 
 
