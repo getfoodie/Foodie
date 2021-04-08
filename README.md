@@ -16,7 +16,6 @@ Original App Design Project - README Template
 Foodie allows users to decide what to eat based on what they are craving for, but if the users have no specific food preferences, they will directly spin the wheel of mixed choices. Else they will spin the wheel based on what type of food they have chosen. After spinning the wheel, the users will be recommended to eat different foods
 
 ### App Evaluation
-[Evaluation of your app across the following attributes]
 - **Category:** Lifestyle app, more specifically for food
 - **Mobile:** Yes (Might utilize map)
 - **Story:** It allows users to decide what to eat based on what they are craving for, but if the users have no specific food preferences, they will directly spin the wheel of mixed choices. Else they will spin the wheel based on what type of food they have chosen. After spinning the wheel, the users will be recommended to eat different foods
@@ -117,6 +116,28 @@ Foodie allows users to decide what to eat based on what they are craving for, bu
 
 ## Schema 
 
+### Models
+
+Food Options
+| Property | Type     | Description|
+| -------- | -------- | -------- |
+| food     | string   | Name of the food category     |
+| image    | file     | Image of the food catgory     |
+| pickedCategory  | array   | The food text + image category. Picked category will turn True in Array and the rest is False |
+
+Wheel 
+| Property   | Type   | Description                           |
+| ---------- | ------ | ------------------------------------- |
+| food | string | Name of the food in specific category |
+| spin | boolean | False until you click button to spin the wheel|
+| foodChoice |  array | array to add/remove food choices |
+
+Results
+| Property   | Type       | Description |
+| --------   | ---------- | ----------- |
+| pickedFood | string     | The randomly picked result of food after spinning the wheel |
+| respin     | boolean     | Click on the button to respin the wheel and this will be true. Then it will go back to the screen to pick what you are craving for again |
+
 ### Networking
 * Cravings Screen
     * (Read/GET) Taking in the selected category array
@@ -205,9 +226,4 @@ Foodie allows users to decide what to eat based on what they are craving for, bu
     }
     
     ```
-### Models
-[Add table of models]
-### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
