@@ -116,7 +116,95 @@ Foodie allows users to decide what to eat based on what they are craving for, bu
 <img src="http://g.recordit.co/JyBGpkpIGh.gif" width=600>
 
 ## Schema 
-[This section will be completed in Unit 9]
+
+### Networking
+* Cravings Screen
+    * (Read/GET) Taking in the selected category array
+    ```swift
+    //Query all foods from the food category user picked
+    let query = PFQuery(className:"food")
+    query.whereKey("craving", equalTo: pickedFood)
+    query.order(byDescending: "createdAt")
+    query.findObjectsInBackground { (food: [PFObject]?, error: Error?) in
+        if let error = error {
+            print(error.localizedDescription)
+        } else if let posts = posts {
+            print("Successfully retrieved \(foods.count) foods.")
+            // TODO: Do something with posts...
+        }
+    }
+
+* Wheel Screen
+    * (Read/GET) Spinning the wheel
+     ```swift
+    let query = PFQuery(className:"wheel")
+    query.whereKey("spin", equalTo: wheel)
+    query.order(byDescending: "createdAt")
+    query.findObjectsInBackground { (food: [PFObject]?, error: Error?) in
+        if let error = error { 
+            print(error.localizedDescription)
+        } else if let posts = posts {
+            print("Successfully retrieved \(foodOptions.count) food options.")
+        // TODO: Do something with posts...
+        }
+    }
+    
+    ```
+    
+    * (Update/PUT) Generating food options for the wheel
+    ```swift
+    let query = PFQuery(className:"wheel")
+    query.getObjectInBackground(withId: "xWMyZEGZ") { (wheel: PFObject?, error: Error?) in
+        if let error = error {
+            print(error.localizedDescription)
+        } else if let wheel = wheel {
+            wheel["addOption"] = true
+            wheel["foodOption"] = 1338
+            wheel.saveInBackground()
+        }
+    }
+    ```
+    
+    * (Delete) Removing food options from the wheel
+    ```swift
+    PFObject.deleteAll(inBackground: objectArray) { (succeeded, error) in
+        if (succeeded) {
+            // The array of objects was successfully deleted.
+        }
+        else {
+            // There was an error. Check the errors localizedDescription.
+        }
+    }
+    ```
+    * (Create/POST) Adding food options to the wheel
+    ```swift 
+    let foodsCategory = PFObject(className:"wheel")
+    foodsCategory["new"] = input.user
+    foodsCategory.saveInBackground { (succeeded, error)  in
+        if (succeeded) {
+            // The object has been saved.
+        } else {
+            // There was a problem, check error.description
+        }
+    }
+    ```
+
+* Results Screen
+    * (Read/GET) Respinning the wheel
+    ```swift
+    let query = PFQuery(className:"wheel")
+    query.whereKey("spin", equalTo: wheel)
+    query.order(byDescending: "createdAt")
+    query.findObjectsInBackground { (food: [PFObject]?, error: Error?) in
+        if let error = error { 
+            print(error.localizedDescription)
+        } else if let posts = posts {
+            print("Successfully retrieved \(foodOptions.count) food options.")
+        // TODO: Do something with posts...
+        }
+    }
+    
+    ```
 ### Models
 [Add table of models]
 ### Networking
