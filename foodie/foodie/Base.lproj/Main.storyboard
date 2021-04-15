@@ -13,24 +13,6 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="foodie" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <connections>
-                        <segue destination="Ybx-GI-9ON" kind="presentation" id="2hq-lF-HjS"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="64" y="92"/>
-        </scene>
         <!--Wheel-->
         <scene sceneID="wrP-bG-Kol">
             <objects>
@@ -41,7 +23,7 @@
                         <viewLayoutGuide key="safeArea" id="xef-3M-kMs"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Wheel" selectedImage="wheelSelected" id="yNF-wS-wcy"/>
+                    <tabBarItem key="tabBarItem" title="Wheel" image="WheelUnselected" selectedImage="wheelSelected" id="yNF-wS-wcy"/>
                     <connections>
                         <segue destination="nMH-fk-4b0" kind="presentation" id="zaf-oe-EU9"/>
                     </connections>
@@ -58,129 +40,118 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0SS-zh-w5b">
-                                <rect key="frame" x="42" y="151" width="153" height="109"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Click on what you’re craving for:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pqr-tK-pHi">
+                                <rect key="frame" x="72" y="72" width="271" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="s6r-Ju-QkC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Kollektif" family="Kollektif" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0SS-zh-w5b">
+                                <rect key="frame" x="42" y="163" width="153" height="109"/>
                                 <state key="normal" image="VeggiesButton"/>
                                 <connections>
                                     <action selector="VeggiesOnClick:" destination="dpX-Nh-R8v" eventType="touchUpInside" id="Yb1-b1-6ll"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NW6-XW-yrq">
-                                <rect key="frame" x="42" y="303" width="153" height="109"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NW6-XW-yrq">
+                                <rect key="frame" x="42" y="315" width="153" height="109"/>
                                 <state key="normal" image="DrinksButton"/>
                                 <connections>
                                     <action selector="DrinksOnClick:" destination="dpX-Nh-R8v" eventType="touchUpInside" id="5Os-gM-Mv1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exZ-bD-VWf">
-                                <rect key="frame" x="219" y="151" width="153" height="109"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exZ-bD-VWf">
+                                <rect key="frame" x="219" y="163" width="153" height="109"/>
                                 <state key="normal" image="MeatsButton"/>
                                 <connections>
                                     <action selector="MeatsOnClick:" destination="dpX-Nh-R8v" eventType="touchUpInside" id="qjC-Hk-gbt"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dkc-Xv-609">
-                                <rect key="frame" x="218" y="303" width="153" height="109"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dkc-Xv-609">
+                                <rect key="frame" x="218" y="315" width="153" height="109"/>
                                 <state key="normal" image="NoodlesButton"/>
                                 <connections>
                                     <action selector="SoupsOnClick:" destination="dpX-Nh-R8v" eventType="touchUpInside" id="KIa-lP-P1X"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IjG-BX-iw3">
-                                <rect key="frame" x="42" y="457" width="153" height="109"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IjG-BX-iw3">
+                                <rect key="frame" x="42" y="469" width="153" height="109"/>
                                 <state key="normal" image="FastFoodButton"/>
                                 <connections>
                                     <action selector="FastFoodOnClick:" destination="dpX-Nh-R8v" eventType="touchUpInside" id="PQp-lK-jcz"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0P0-8D-q1B">
-                                <rect key="frame" x="42" y="611" width="153" height="109"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0P0-8D-q1B">
+                                <rect key="frame" x="42" y="623" width="153" height="109"/>
                                 <state key="normal" image="RiceButton"/>
                                 <connections>
                                     <action selector="CarbsOnClick:" destination="dpX-Nh-R8v" eventType="touchUpInside" id="wTa-XU-Qf3"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEB-hn-mNR">
-                                <rect key="frame" x="219" y="457" width="153" height="109"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEB-hn-mNR">
+                                <rect key="frame" x="219" y="469" width="153" height="109"/>
                                 <state key="normal" image="DessertsButton"/>
                                 <connections>
                                     <action selector="DessertsOnClick:" destination="dpX-Nh-R8v" eventType="touchUpInside" id="w2K-V8-TZH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXi-3m-XRL">
-                                <rect key="frame" x="219" y="611" width="153" height="109"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXi-3m-XRL">
+                                <rect key="frame" x="219" y="623" width="153" height="109"/>
                                 <state key="normal" image="RandomButton"/>
                                 <connections>
                                     <action selector="RandomOnClick:" destination="dpX-Nh-R8v" eventType="touchUpInside" id="x7v-n5-tfn"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Veggies" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zyj-Ac-VPA">
-                                <rect key="frame" x="42" y="266" width="153" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Veggies" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zyj-Ac-VPA">
+                                <rect key="frame" x="42" y="278" width="153" height="17"/>
                                 <fontDescription key="fontDescription" name="Kollektif" family="Kollektif" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Click on what you’re craving for:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pqr-tK-pHi">
-                                <rect key="frame" x="72" y="72" width="271" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Kollektif" family="Kollektif" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Meats" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3mb-xo-KyV">
-                                <rect key="frame" x="219" y="266" width="153" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Meats" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3mb-xo-KyV">
+                                <rect key="frame" x="219" y="278" width="153" height="17"/>
                                 <fontDescription key="fontDescription" name="Kollektif" family="Kollektif" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fast Food" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQb-2d-IrP">
-                                <rect key="frame" x="42" y="574" width="153" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Drinks" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DD2-yC-cmK">
+                                <rect key="frame" x="42" y="431" width="153" height="17"/>
                                 <fontDescription key="fontDescription" name="Kollektif" family="Kollektif" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Desserts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zF7-j6-mKW">
-                                <rect key="frame" x="219" y="574" width="152" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Fast Food" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQb-2d-IrP">
+                                <rect key="frame" x="42" y="586" width="153" height="17"/>
                                 <fontDescription key="fontDescription" name="Kollektif" family="Kollektif" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Carbs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JXV-qn-CWB">
-                                <rect key="frame" x="42" y="728" width="153" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Desserts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zF7-j6-mKW">
+                                <rect key="frame" x="219" y="586" width="152" height="17"/>
                                 <fontDescription key="fontDescription" name="Kollektif" family="Kollektif" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Random" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UJ6-Kk-TXM">
-                                <rect key="frame" x="219" y="728" width="153" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Carbs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JXV-qn-CWB">
+                                <rect key="frame" x="42" y="740" width="153" height="17"/>
                                 <fontDescription key="fontDescription" name="Kollektif" family="Kollektif" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Soups" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n3y-ne-Ucl">
-                                <rect key="frame" x="219" y="419" width="152" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Random" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UJ6-Kk-TXM">
+                                <rect key="frame" x="219" y="740" width="153" height="17"/>
                                 <fontDescription key="fontDescription" name="Kollektif" family="Kollektif" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Drinks" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DD2-yC-cmK">
-                                <rect key="frame" x="42" y="419" width="153" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Soups" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n3y-ne-Ucl">
+                                <rect key="frame" x="219" y="431" width="152" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="152" id="fkZ-YK-dHH"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Kollektif" family="Kollektif" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -188,8 +159,60 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="za6-xX-Ulp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="n3y-ne-Ucl" firstAttribute="leading" secondItem="cEB-hn-mNR" secondAttribute="leading" id="07S-OM-32g"/>
+                            <constraint firstItem="pqr-tK-pHi" firstAttribute="top" secondItem="za6-xX-Ulp" secondAttribute="top" constant="28" id="16G-Ub-9tA"/>
+                            <constraint firstItem="zF7-j6-mKW" firstAttribute="leading" secondItem="gXi-3m-XRL" secondAttribute="leading" id="1wJ-wf-B6t"/>
+                            <constraint firstItem="cEB-hn-mNR" firstAttribute="centerX" secondItem="zF7-j6-mKW" secondAttribute="centerX" id="3Hl-Hm-P3W"/>
+                            <constraint firstItem="0SS-zh-w5b" firstAttribute="leading" secondItem="Zyj-Ac-VPA" secondAttribute="leading" id="5jO-GQ-Psa"/>
+                            <constraint firstItem="IjG-BX-iw3" firstAttribute="top" secondItem="DD2-yC-cmK" secondAttribute="bottom" constant="21" id="6jR-O7-vfj"/>
+                            <constraint firstItem="NW6-XW-yrq" firstAttribute="leading" secondItem="DD2-yC-cmK" secondAttribute="leading" id="7nU-fq-irW"/>
+                            <constraint firstItem="Zyj-Ac-VPA" firstAttribute="leading" secondItem="NW6-XW-yrq" secondAttribute="leading" id="8xT-hc-baE"/>
+                            <constraint firstItem="gXi-3m-XRL" firstAttribute="trailing" secondItem="UJ6-Kk-TXM" secondAttribute="trailing" id="A9a-sd-w14"/>
+                            <constraint firstItem="exZ-bD-VWf" firstAttribute="trailing" secondItem="3mb-xo-KyV" secondAttribute="trailing" id="BI0-1a-m80"/>
+                            <constraint firstItem="DD2-yC-cmK" firstAttribute="leading" secondItem="IjG-BX-iw3" secondAttribute="leading" id="Cav-iO-Sbi"/>
+                            <constraint firstItem="0P0-8D-q1B" firstAttribute="top" secondItem="gXi-3m-XRL" secondAttribute="top" id="Cyq-Zh-3Kt"/>
+                            <constraint firstItem="EQb-2d-IrP" firstAttribute="trailing" secondItem="0P0-8D-q1B" secondAttribute="trailing" id="EAd-to-mHE"/>
+                            <constraint firstItem="0SS-zh-w5b" firstAttribute="top" secondItem="exZ-bD-VWf" secondAttribute="top" id="HDx-mv-cpU"/>
+                            <constraint firstItem="cEB-hn-mNR" firstAttribute="trailing" secondItem="gXi-3m-XRL" secondAttribute="trailing" id="HaF-y1-wqL"/>
+                            <constraint firstItem="0P0-8D-q1B" firstAttribute="top" secondItem="EQb-2d-IrP" secondAttribute="bottom" constant="20" id="IVM-i6-PYy"/>
+                            <constraint firstItem="Dkc-Xv-609" firstAttribute="leading" secondItem="NW6-XW-yrq" secondAttribute="trailing" constant="23" id="IZl-I7-o6v"/>
+                            <constraint firstItem="3mb-xo-KyV" firstAttribute="trailing" secondItem="cEB-hn-mNR" secondAttribute="trailing" id="Kuo-RD-8YD"/>
+                            <constraint firstItem="0SS-zh-w5b" firstAttribute="trailing" secondItem="Zyj-Ac-VPA" secondAttribute="trailing" id="OHF-Mw-GZS"/>
+                            <constraint firstItem="DD2-yC-cmK" firstAttribute="baseline" secondItem="n3y-ne-Ucl" secondAttribute="baseline" id="RYF-Am-ks9"/>
+                            <constraint firstItem="NW6-XW-yrq" firstAttribute="top" secondItem="Dkc-Xv-609" secondAttribute="top" id="S1G-EA-I1U"/>
+                            <constraint firstItem="IjG-BX-iw3" firstAttribute="leading" secondItem="EQb-2d-IrP" secondAttribute="leading" id="Thh-mB-No8"/>
+                            <constraint firstItem="Dkc-Xv-609" firstAttribute="trailing" secondItem="n3y-ne-Ucl" secondAttribute="trailing" id="U0A-Rg-3dA"/>
+                            <constraint firstItem="JXV-qn-CWB" firstAttribute="top" secondItem="0P0-8D-q1B" secondAttribute="bottom" constant="8" id="VNT-1I-Fec"/>
+                            <constraint firstItem="cEB-hn-mNR" firstAttribute="leading" secondItem="zF7-j6-mKW" secondAttribute="leading" id="aCG-EC-IzP"/>
+                            <constraint firstItem="Zyj-Ac-VPA" firstAttribute="trailing" secondItem="NW6-XW-yrq" secondAttribute="trailing" id="aXw-uz-wSc"/>
+                            <constraint firstItem="NW6-XW-yrq" firstAttribute="top" secondItem="Zyj-Ac-VPA" secondAttribute="bottom" constant="20" id="afi-kH-8nm"/>
+                            <constraint firstItem="exZ-bD-VWf" firstAttribute="leading" secondItem="3mb-xo-KyV" secondAttribute="leading" id="cEK-1m-eel"/>
+                            <constraint firstItem="0SS-zh-w5b" firstAttribute="top" secondItem="pqr-tK-pHi" secondAttribute="bottom" constant="27" id="cLD-6W-yIK"/>
+                            <constraint firstItem="0P0-8D-q1B" firstAttribute="trailing" secondItem="JXV-qn-CWB" secondAttribute="trailing" id="cMM-de-mox"/>
+                            <constraint firstItem="EQb-2d-IrP" firstAttribute="baseline" secondItem="zF7-j6-mKW" secondAttribute="baseline" id="cst-Wo-cuw"/>
+                            <constraint firstItem="gXi-3m-XRL" firstAttribute="leading" secondItem="UJ6-Kk-TXM" secondAttribute="leading" id="eTn-XD-Zid"/>
+                            <constraint firstItem="Dkc-Xv-609" firstAttribute="centerX" secondItem="n3y-ne-Ucl" secondAttribute="centerX" id="euK-EQ-mEn"/>
+                            <constraint firstItem="IjG-BX-iw3" firstAttribute="top" secondItem="cEB-hn-mNR" secondAttribute="top" id="f0C-3G-vBy"/>
+                            <constraint firstItem="DD2-yC-cmK" firstAttribute="trailing" secondItem="IjG-BX-iw3" secondAttribute="trailing" id="hsp-vF-R9c"/>
+                            <constraint firstItem="pqr-tK-pHi" firstAttribute="leading" secondItem="za6-xX-Ulp" secondAttribute="leading" constant="72" id="jHL-y2-RHf"/>
+                            <constraint firstItem="NW6-XW-yrq" firstAttribute="trailing" secondItem="DD2-yC-cmK" secondAttribute="trailing" id="jQ2-UW-MSf"/>
+                            <constraint firstItem="Zyj-Ac-VPA" firstAttribute="baseline" secondItem="3mb-xo-KyV" secondAttribute="baseline" id="jYj-M8-bx2"/>
+                            <constraint firstItem="pqr-tK-pHi" firstAttribute="centerX" secondItem="0Zb-gR-FPc" secondAttribute="centerX" id="jeQ-J7-Wde"/>
+                            <constraint firstItem="EQb-2d-IrP" firstAttribute="leading" secondItem="0P0-8D-q1B" secondAttribute="leading" id="joI-tv-2Ih"/>
+                            <constraint firstItem="Zyj-Ac-VPA" firstAttribute="top" secondItem="0SS-zh-w5b" secondAttribute="bottom" constant="6" id="lWu-x3-6GX"/>
+                            <constraint firstItem="3mb-xo-KyV" firstAttribute="leading" secondItem="n3y-ne-Ucl" secondAttribute="leading" id="oHj-3K-mYe"/>
+                            <constraint firstItem="JXV-qn-CWB" firstAttribute="baseline" secondItem="UJ6-Kk-TXM" secondAttribute="baseline" id="oee-Js-2o7"/>
+                            <constraint firstItem="DD2-yC-cmK" firstAttribute="top" secondItem="NW6-XW-yrq" secondAttribute="bottom" constant="7" id="p6M-mM-vya"/>
+                            <constraint firstItem="IjG-BX-iw3" firstAttribute="trailing" secondItem="EQb-2d-IrP" secondAttribute="trailing" id="rUA-HE-FdZ"/>
+                            <constraint firstItem="0SS-zh-w5b" firstAttribute="leading" secondItem="za6-xX-Ulp" secondAttribute="leading" constant="42" id="vM8-dv-y35"/>
+                            <constraint firstItem="0P0-8D-q1B" firstAttribute="leading" secondItem="JXV-qn-CWB" secondAttribute="leading" id="vau-Q6-XTa"/>
+                            <constraint firstItem="za6-xX-Ulp" firstAttribute="trailing" secondItem="exZ-bD-VWf" secondAttribute="trailing" constant="42" id="yJA-uJ-jTW"/>
+                            <constraint firstItem="n3y-ne-Ucl" firstAttribute="trailing" secondItem="zF7-j6-mKW" secondAttribute="trailing" id="yZN-Ni-fRT"/>
+                            <constraint firstItem="EQb-2d-IrP" firstAttribute="top" secondItem="IjG-BX-iw3" secondAttribute="bottom" constant="8" id="ydt-VI-o7Y"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" selectedImage="CravingsSelected" id="i0l-Mp-FD7"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="CravingsUnselected" selectedImage="CravingsSelected" id="i0l-Mp-FD7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XVc-VC-7RH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -231,6 +254,7 @@
     </scenes>
     <resources>
         <image name="CravingsSelected" width="20" height="23"/>
+        <image name="CravingsUnselected" width="20" height="23"/>
         <image name="DessertsButton" width="153" height="109"/>
         <image name="DrinksButton" width="153" height="109"/>
         <image name="FastFoodButton" width="153" height="109"/>
@@ -239,6 +263,7 @@
         <image name="RandomButton" width="153" height="109"/>
         <image name="RiceButton" width="153" height="109"/>
         <image name="VeggiesButton" width="153" height="109"/>
+        <image name="WheelUnselected" width="25" height="25"/>
         <image name="wheelSelected" width="25" height="25"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
