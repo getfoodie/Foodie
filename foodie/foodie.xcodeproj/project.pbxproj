@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		97913F1B2628AB52000622B5 /* WheelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97913F1A2628AB52000622B5 /* WheelViewController.swift */; };
+		B2956066262908AF0038D4C6 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2956065262908AF0038D4C6 /* ResultsViewController.swift */; };
 		F64B3126261FA73E00878340 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64B3125261FA73E00878340 /* AppDelegate.swift */; };
 		F64B3128261FA73E00878340 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64B3127261FA73E00878340 /* SceneDelegate.swift */; };
 		F64B312A261FA73E00878340 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64B3129261FA73E00878340 /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		97913F1A2628AB52000622B5 /* WheelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelViewController.swift; sourceTree = "<group>"; };
+		B2956065262908AF0038D4C6 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		F64B3122261FA73E00878340 /* foodie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = foodie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F64B3125261FA73E00878340 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F64B3127261FA73E00878340 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				F6AB1CD82628826000455372 /* fonts */,
 				F6AB1CDD26288E5700455372 /* CravingsViewController.swift */,
 				97913F1A2628AB52000622B5 /* WheelViewController.swift */,
+				B2956065262908AF0038D4C6 /* ResultsViewController.swift */,
 			);
 			path = foodie;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				F64B312A261FA73E00878340 /* ViewController.swift in Sources */,
 				F6AB1CDE26288E5700455372 /* CravingsViewController.swift in Sources */,
 				97913F1B2628AB52000622B5 /* WheelViewController.swift in Sources */,
+				B2956066262908AF0038D4C6 /* ResultsViewController.swift in Sources */,
 				F64B3130261FA73E00878340 /* foodie.xcdatamodeld in Sources */,
 				F64B3126261FA73E00878340 /* AppDelegate.swift in Sources */,
 				F64B3128261FA73E00878340 /* SceneDelegate.swift in Sources */,

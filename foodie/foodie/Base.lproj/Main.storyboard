@@ -369,10 +369,10 @@
             </objects>
             <point key="canvasLocation" x="1689.8550724637682" y="-210.26785714285714"/>
         </scene>
-        <!--View Controller-->
+        <!--Results View Controller-->
         <scene sceneID="iBR-Df-x9u">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="nMH-fk-4b0" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="nMH-fk-4b0" customClass="ResultsViewController" customModule="foodie" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cdf-0i-uUX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
