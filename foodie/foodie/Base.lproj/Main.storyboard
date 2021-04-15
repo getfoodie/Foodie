@@ -369,10 +369,10 @@
             </objects>
             <point key="canvasLocation" x="1689.8550724637682" y="-210.26785714285714"/>
         </scene>
-        <!--Results View Controller-->
+        <!--View Controller-->
         <scene sceneID="iBR-Df-x9u">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="nMH-fk-4b0" customClass="ResultsViewController" customModule="foodie" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="nMH-fk-4b0" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cdf-0i-uUX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -382,8 +382,9 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Result_" translatesAutoresizingMaskIntoConstraints="NO" id="Co1-ui-5Xq">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Result_" translatesAutoresizingMaskIntoConstraints="NO" id="Co1-ui-5Xq">
                                 <rect key="frame" x="87" y="86" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Rectangle 11" translatesAutoresizingMaskIntoConstraints="NO" id="ZKM-9K-UmI">
                                 <rect key="frame" x="26" y="222" width="363" height="362"/>
@@ -409,10 +410,7 @@
                         <viewLayoutGuide key="safeArea" id="YdR-4g-MDL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Co1-ui-5Xq" firstAttribute="leading" secondItem="YdR-4g-MDL" secondAttribute="leading" constant="87" id="0Yj-xj-QRf"/>
                             <constraint firstItem="fFK-OI-TGT" firstAttribute="top" secondItem="YdR-4g-MDL" secondAttribute="top" id="6IL-Ps-bhw"/>
-                            <constraint firstItem="Co1-ui-5Xq" firstAttribute="top" secondItem="cdf-0i-uUX" secondAttribute="top" constant="87" id="JT4-n2-Gn0"/>
-                            <constraint firstItem="YdR-4g-MDL" firstAttribute="trailing" secondItem="Co1-ui-5Xq" secondAttribute="trailing" constant="87" id="lNb-nR-KYo"/>
                             <constraint firstItem="YdR-4g-MDL" firstAttribute="trailing" secondItem="fFK-OI-TGT" secondAttribute="trailing" id="rst-qX-CBf"/>
                             <constraint firstItem="YdR-4g-MDL" firstAttribute="bottom" secondItem="fFK-OI-TGT" secondAttribute="bottom" id="tmg-7s-xPh"/>
                             <constraint firstItem="fFK-OI-TGT" firstAttribute="leading" secondItem="YdR-4g-MDL" secondAttribute="leading" id="vT5-3D-c9I"/>
