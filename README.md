@@ -52,7 +52,8 @@ Foodie allows users to decide what to eat based on what they are craving for, bu
 
 - [x] Questions/Craving Screen
 - [x] Wheel
-- [ ] Results
+- [x] Results
+
 **Optional Nice-to-have Stories**
 
 * Giving the user a location/place to eat based off of location or yelp API
