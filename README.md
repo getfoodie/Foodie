@@ -114,9 +114,6 @@ Foodie allows users to decide what to eat based on what they are craving for, bu
 ### [BONUS] Interactive Prototype
 <img src="http://g.recordit.co/JyBGpkpIGh.gif" width=600>
 
-### Unit 10 
-<img src="http://g.recordit.co/EQM2U45Yke.gif?fbclid=IwAR2KidRwpkuSp1VIxmqsN90b8RjV2ymSqkRT_GhED0DFc9tWOczvyhxBe3I" width=600>
-
 ## Schema 
 
 ### Models
