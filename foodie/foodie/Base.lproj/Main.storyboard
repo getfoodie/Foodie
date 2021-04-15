@@ -16,7 +16,7 @@
         <!--Wheel-->
         <scene sceneID="wrP-bG-Kol">
             <objects>
-                <viewController id="eeI-Yc-gd9" customClass="WheelViewController" customModule="foodie" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="eeI-Yc-gd9" customClass="WheelViewController" customModule="foodie" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gTu-fe-UhZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -100,6 +100,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="SpinOnClick:" destination="eeI-Yc-gd9" eventType="touchUpInside" id="A7o-yL-743"/>
+                                    <segue destination="eUc-fQ-tTV" kind="presentation" id="nNO-kK-tpc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vlE-wR-cTZ" userLabel="Add Button">
@@ -177,9 +178,6 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Wheel" image="WheelUnselected" selectedImage="wheelSelected" id="yNF-wS-wcy"/>
-                    <connections>
-                        <segue destination="nMH-fk-4b0" kind="presentation" id="zaf-oe-EU9"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KGF-rW-6cC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -188,7 +186,7 @@
         <!--Home-->
         <scene sceneID="ZNJ-Za-H6Z">
             <objects>
-                <viewController id="dpX-Nh-R8v" customClass="CravingsViewController" customModule="foodie" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="dpX-Nh-R8v" customClass="CravingsViewController" customModule="foodie" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Zb-gR-FPc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -374,17 +372,61 @@
         <!--View Controller-->
         <scene sceneID="iBR-Df-x9u">
             <objects>
-                <viewController id="nMH-fk-4b0" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="nMH-fk-4b0" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cdf-0i-uUX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Result background" translatesAutoresizingMaskIntoConstraints="NO" id="fFK-OI-TGT">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Result_" translatesAutoresizingMaskIntoConstraints="NO" id="Co1-ui-5Xq">
+                                <rect key="frame" x="87" y="86" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Rectangle 11" translatesAutoresizingMaskIntoConstraints="NO" id="ZKM-9K-UmI">
+                                <rect key="frame" x="26" y="222" width="363" height="362"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Your Food Result" translatesAutoresizingMaskIntoConstraints="NO" id="Jf5-6T-rky">
+                                <rect key="frame" x="87" y="549" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Opi-ge-ByW">
+                                <rect key="frame" x="54" y="646" width="306" height="143"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Rectangle 10"/>
+                                <connections>
+                                    <segue destination="eeI-Yc-gd9" kind="presentation" id="fzR-zH-NIR"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Re-spin_" translatesAutoresizingMaskIntoConstraints="NO" id="NQG-tb-uPU">
+                                <rect key="frame" x="124" y="671" width="167" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="YdR-4g-MDL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fFK-OI-TGT" firstAttribute="top" secondItem="YdR-4g-MDL" secondAttribute="top" id="6IL-Ps-bhw"/>
+                            <constraint firstItem="YdR-4g-MDL" firstAttribute="trailing" secondItem="fFK-OI-TGT" secondAttribute="trailing" id="rst-qX-CBf"/>
+                            <constraint firstItem="YdR-4g-MDL" firstAttribute="bottom" secondItem="fFK-OI-TGT" secondAttribute="bottom" id="tmg-7s-xPh"/>
+                            <constraint firstItem="fFK-OI-TGT" firstAttribute="leading" secondItem="YdR-4g-MDL" secondAttribute="leading" id="vT5-3D-c9I"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Bwg-4b-Xhv">
+                        <barButtonItem key="leftBarButtonItem" title="Home" id="BTW-eo-Y5V">
+                            <connections>
+                                <segue destination="dpX-Nh-R8v" kind="presentation" id="VAB-0O-WFv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vkv-90-H6Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2458" y="437"/>
+            <point key="canvasLocation" x="3449.275362318841" y="436.60714285714283"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="K9p-gh-57W">
@@ -404,7 +446,29 @@
             </objects>
             <point key="canvasLocation" x="800" y="93"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uDr-ZX-F0q">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="eUc-fQ-tTV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oos-Zh-4tE">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="nMH-fk-4b0" kind="relationship" relationship="rootViewController" id="Pa7-gZ-Pww"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zNy-aA-YKU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2537.68115942029" y="436.60714285714283"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="VAB-0O-WFv"/>
+        <segue reference="fzR-zH-NIR"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Add Options" width="110" height="19"/>
         <image name="Click to Spin!" width="112" height="19"/>
@@ -424,14 +488,20 @@
         <image name="NoodlesButton" width="153" height="109"/>
         <image name="Polygon 2" width="29" height="30"/>
         <image name="RandomButton" width="153" height="109"/>
+        <image name="Re-spin_" width="163" height="35"/>
+        <image name="Rectangle 10" width="266" height="106"/>
+        <image name="Rectangle 11" width="325" height="355"/>
         <image name="Rectangle 18" width="6" height="31"/>
         <image name="Rectangle 19" width="230" height="49"/>
         <image name="Rectangle 20" width="230" height="49"/>
         <image name="Rectangle 21" width="230" height="49"/>
         <image name="Remove Options" width="142" height="19"/>
+        <image name="Result background" width="1080" height="1920"/>
+        <image name="Result_" width="157" height="40"/>
         <image name="RiceButton" width="153" height="109"/>
         <image name="VeggiesButton" width="153" height="109"/>
         <image name="WheelUnselected" width="25" height="25"/>
+        <image name="Your Food Result" width="197" height="21"/>
         <image name="wheelSelected" width="25" height="25"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

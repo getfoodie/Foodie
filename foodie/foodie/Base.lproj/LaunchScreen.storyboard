@@ -16,20 +16,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="JYx-mg-h3h">
-                                <rect key="frame" x="57" y="237" width="300" height="300"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="foodie" translatesAutoresizingMaskIntoConstraints="NO" id="c7M-cp-mBh">
+                                <rect key="frame" x="147" y="531" width="120" height="41"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="foodie" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DBM-Pk-vZz">
-                                <rect key="frame" x="148" y="545" width="119" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="JYx-mg-h3h">
+                                <rect key="frame" x="55" y="244" width="304" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="2nG-bQ-qMa"/>
+                                    <constraint firstAttribute="height" constant="300" id="SXf-qP-YSm"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JYx-mg-h3h" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="36v-Sd-4ir"/>
+                            <constraint firstItem="JYx-mg-h3h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="55" id="FEQ-FJ-Qta"/>
+                            <constraint firstItem="c7M-cp-mBh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="147" id="T9v-X8-nnt"/>
+                            <constraint firstItem="c7M-cp-mBh" firstAttribute="top" secondItem="JYx-mg-h3h" secondAttribute="bottom" constant="-13" id="dCO-7c-zoP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c7M-cp-mBh" secondAttribute="trailing" constant="147" id="jVC-ED-NCi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JYx-mg-h3h" secondAttribute="trailing" constant="55" id="mf0-Tu-OtB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="c7M-cp-mBh" secondAttribute="bottom" constant="290" id="rin-zk-fb6"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -38,6 +46,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="foodie" width="102" height="36"/>
         <image name="logo" width="300" height="300"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
