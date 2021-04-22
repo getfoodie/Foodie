@@ -9,7 +9,10 @@ import UIKit
 
 class WheelViewController: UIViewController {
 
-   
+    @IBAction func BackOnClick(_ sender: UIButton) {
+        performSegue(withIdentifier: "backToHome", sender: UIButton.self)
+    }
+    
     @IBAction func SpinOnClick(_ sender: UIButton) {
         print("Click to Spin Button was clicked")
     }

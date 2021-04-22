@@ -100,7 +100,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="SpinOnClick:" destination="eeI-Yc-gd9" eventType="touchUpInside" id="A7o-yL-743"/>
-                                    <segue destination="eUc-fQ-tTV" kind="presentation" id="nNO-kK-tpc"/>
+                                    <segue destination="nMH-fk-4b0" kind="show" id="pFf-l3-RuU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vlE-wR-cTZ" userLabel="Add Button">
@@ -205,6 +205,7 @@
                                 <state key="normal" image="VeggiesButton"/>
                                 <connections>
                                     <action selector="VeggiesOnClick:" destination="dpX-Nh-R8v" eventType="touchUpInside" id="Yb1-b1-6ll"/>
+                                    <segue destination="HlF-eI-vCS" kind="show" id="wVh-nc-wg8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exZ-bD-VWf" userLabel="Meats Button">
@@ -212,6 +213,7 @@
                                 <state key="normal" image="MeatsButton"/>
                                 <connections>
                                     <action selector="MeatsOnClick:" destination="dpX-Nh-R8v" eventType="touchUpInside" id="qjC-Hk-gbt"/>
+                                    <segue destination="HlF-eI-vCS" kind="show" id="pcN-MU-8Md"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NW6-XW-yrq" userLabel="Drink Button">
@@ -219,6 +221,7 @@
                                 <state key="normal" image="DrinksButton"/>
                                 <connections>
                                     <action selector="DrinksOnClick:" destination="dpX-Nh-R8v" eventType="touchUpInside" id="5Os-gM-Mv1"/>
+                                    <segue destination="HlF-eI-vCS" kind="show" id="0sj-Um-5cc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dkc-Xv-609" userLabel="Soup Button">
@@ -226,6 +229,7 @@
                                 <state key="normal" image="NoodlesButton"/>
                                 <connections>
                                     <action selector="SoupsOnClick:" destination="dpX-Nh-R8v" eventType="touchUpInside" id="KIa-lP-P1X"/>
+                                    <segue destination="HlF-eI-vCS" kind="showDetail" id="PjB-KK-apc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IjG-BX-iw3" userLabel="Fast Food Button">
@@ -233,6 +237,7 @@
                                 <state key="normal" image="FastFoodButton"/>
                                 <connections>
                                     <action selector="FastFoodOnClick:" destination="dpX-Nh-R8v" eventType="touchUpInside" id="PQp-lK-jcz"/>
+                                    <segue destination="HlF-eI-vCS" kind="show" id="Fqm-xk-TTr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0P0-8D-q1B" userLabel="Carbs Button">
@@ -240,6 +245,7 @@
                                 <state key="normal" image="RiceButton"/>
                                 <connections>
                                     <action selector="CarbsOnClick:" destination="dpX-Nh-R8v" eventType="touchUpInside" id="wTa-XU-Qf3"/>
+                                    <segue destination="HlF-eI-vCS" kind="show" id="uPT-9o-Gzv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEB-hn-mNR" userLabel="Desserts Button">
@@ -247,6 +253,7 @@
                                 <state key="normal" image="DessertsButton"/>
                                 <connections>
                                     <action selector="DessertsOnClick:" destination="dpX-Nh-R8v" eventType="touchUpInside" id="w2K-V8-TZH"/>
+                                    <segue destination="HlF-eI-vCS" kind="show" id="7JD-wx-dOC"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXi-3m-XRL" userLabel="Random Button">
@@ -254,6 +261,7 @@
                                 <state key="normal" image="RandomButton"/>
                                 <connections>
                                     <action selector="RandomOnClick:" destination="dpX-Nh-R8v" eventType="touchUpInside" id="x7v-n5-tfn"/>
+                                    <segue destination="HlF-eI-vCS" kind="show" id="N57-tu-5YQ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Veggies" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zyj-Ac-VPA">
@@ -364,10 +372,11 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="CravingsUnselected" selectedImage="CravingsSelected" id="i0l-Mp-FD7"/>
+                    <navigationItem key="navigationItem" id="C5O-dh-pz1"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XVc-VC-7RH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1689.8550724637682" y="-210.26785714285714"/>
+            <point key="canvasLocation" x="1690" y="-344"/>
         </scene>
         <!--Results View Controller-->
         <scene sceneID="iBR-Df-x9u">
@@ -378,7 +387,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Result background" translatesAutoresizingMaskIntoConstraints="NO" id="fFK-OI-TGT">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                             </imageView>
@@ -394,18 +403,14 @@
                                 <rect key="frame" x="87" y="549" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Opi-ge-ByW">
-                                <rect key="frame" x="54" y="646" width="306" height="143"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CSW-6s-aut">
+                                <rect key="frame" x="74" y="653" width="266" height="106"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Rectangle 10"/>
+                                <state key="normal" image="Respin"/>
                                 <connections>
-                                    <segue destination="eeI-Yc-gd9" kind="presentation" id="fzR-zH-NIR"/>
+                                    <segue destination="dpX-Nh-R8v" kind="show" id="KAO-ic-wsO"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Re-spin_" translatesAutoresizingMaskIntoConstraints="NO" id="NQG-tb-uPU">
-                                <rect key="frame" x="124" y="671" width="167" height="93"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YdR-4g-MDL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -417,16 +422,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Bwg-4b-Xhv">
-                        <barButtonItem key="leftBarButtonItem" title="Home" id="BTW-eo-Y5V">
-                            <connections>
-                                <segue destination="dpX-Nh-R8v" kind="presentation" id="VAB-0O-WFv"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="leftBarButtonItem" title="Home" id="BTW-eo-Y5V"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vkv-90-H6Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3449.275362318841" y="436.60714285714283"/>
+            <point key="canvasLocation" x="2538" y="437"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="K9p-gh-57W">
@@ -446,28 +447,190 @@
             </objects>
             <point key="canvasLocation" x="800" y="93"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="uDr-ZX-F0q">
+        <!--Wheel-->
+        <scene sceneID="dbx-Ul-QCz">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="eUc-fQ-tTV" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oos-Zh-4tE">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="nMH-fk-4b0" kind="relationship" relationship="rootViewController" id="Pa7-gZ-Pww"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zNy-aA-YKU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController modalPresentationStyle="fullScreen" id="HlF-eI-vCS" customClass="WheelViewController" customModule="foodie" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="w6m-4Q-f1B">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Spin the Wheel!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GLb-sL-aJ1">
+                                <rect key="frame" x="105" y="87" width="205" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Rectangle 20" translatesAutoresizingMaskIntoConstraints="NO" id="tto-4P-gGh">
+                                <rect key="frame" x="91" y="653" width="230" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Rectangle 19" translatesAutoresizingMaskIntoConstraints="NO" id="TzF-rJ-OLh">
+                                <rect key="frame" x="91" y="595" width="230" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Click to Spin!" translatesAutoresizingMaskIntoConstraints="NO" id="vPK-O6-wjc">
+                                <rect key="frame" x="150" y="610" width="112" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Add Options" translatesAutoresizingMaskIntoConstraints="NO" id="LF7-4t-8D9">
+                                <rect key="frame" x="151" y="668" width="110" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Ellipse 4" translatesAutoresizingMaskIntoConstraints="NO" id="A8g-13-Rge">
+                                <rect key="frame" x="51" y="227" width="313" height="313"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Ellipse 5" translatesAutoresizingMaskIntoConstraints="NO" id="cQX-nS-0td">
+                                <rect key="frame" x="65" y="243" width="284" height="285"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Rectangle 21" translatesAutoresizingMaskIntoConstraints="NO" id="2fC-BC-EYf">
+                                <rect key="frame" x="91" y="709" width="230" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Remove Options" translatesAutoresizingMaskIntoConstraints="NO" id="Uyb-vH-TuX">
+                                <rect key="frame" x="135" y="724" width="142" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Ellipse 6" translatesAutoresizingMaskIntoConstraints="NO" id="LBP-ey-9LX">
+                                <rect key="frame" x="194" y="227" width="22" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Rectangle 18" translatesAutoresizingMaskIntoConstraints="NO" id="YSh-HL-Itf">
+                                <rect key="frame" x="202" y="246" width="6" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Polygon 2" translatesAutoresizingMaskIntoConstraints="NO" id="o2l-vi-nlE">
+                                <rect key="frame" x="187" y="260" width="29" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Line 5" translatesAutoresizingMaskIntoConstraints="NO" id="6zo-aO-zII">
+                                <rect key="frame" x="204" y="248" width="2" height="274"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Line 6" translatesAutoresizingMaskIntoConstraints="NO" id="Vcp-FO-S2q">
+                                <rect key="frame" x="114" y="293" width="187" height="189"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Line 8" translatesAutoresizingMaskIntoConstraints="NO" id="uV5-xm-URc">
+                                <rect key="frame" x="67" y="388" width="277" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Line 7" translatesAutoresizingMaskIntoConstraints="NO" id="ua8-ai-Z4h">
+                                <rect key="frame" x="98" y="295" width="209" height="185"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Random" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhV-9N-NaL">
+                                <rect key="frame" x="175" y="156" width="86" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aek-95-Xgh" userLabel="Spin Button">
+                                <rect key="frame" x="90" y="595" width="231" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="SpinOnClick:" destination="HlF-eI-vCS" eventType="touchUpInside" id="hsY-34-l5s"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g4q-eY-1OX" userLabel="Add Button">
+                                <rect key="frame" x="91" y="652" width="230" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="AddOnClick:" destination="HlF-eI-vCS" eventType="touchUpInside" id="bpi-gF-43n"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fsy-Qu-wK1" userLabel="Remove Button">
+                                <rect key="frame" x="90" y="728" width="231" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="RemoveOnClick:" destination="HlF-eI-vCS" eventType="touchUpInside" id="H1r-n1-8kX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Desserts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P8V-fy-07D">
+                                <rect key="frame" x="214" y="285" width="68" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Soups" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9b9-Nw-bvb">
+                                <rect key="frame" x="135" y="285" width="48" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Meats" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0yS-qZ-CCM">
+                                <rect key="frame" x="90" y="346" width="47" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Drinks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOT-yB-jGx">
+                                <rect key="frame" x="147" y="459" width="49" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Carbs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1CV-te-lyJ">
+                                <rect key="frame" x="227" y="459" width="46" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fast Food" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eiA-ew-U8E">
+                                <rect key="frame" x="256" y="346" width="75" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dairy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u31-IP-1ZM">
+                                <rect key="frame" x="273" y="409" width="40" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Veggies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zp0-fx-sMB">
+                                <rect key="frame" x="90" y="408" width="61" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GCt-ot-DNj">
+                                <rect key="frame" x="32" y="59" width="40" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="BackOnClick:" destination="HlF-eI-vCS" eventType="touchUpInside" id="2zg-Aw-l0Z"/>
+                                    <segue destination="dpX-Nh-R8v" kind="show" identifier="backToHome" id="uj6-nT-lZE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="He0-Ry-bTT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Wheel" image="WheelUnselected" selectedImage="wheelSelected" id="l0x-z6-abA"/>
+                    <navigationItem key="navigationItem" id="pDY-hh-OKl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y5v-bP-MvR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2537.68115942029" y="436.60714285714283"/>
+            <point key="canvasLocation" x="2538" y="-344"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="VAB-0O-WFv"/>
-        <segue reference="fzR-zH-NIR"/>
+        <segue reference="0sj-Um-5cc"/>
+        <segue reference="uj6-nT-lZE"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Add Options" width="110" height="19"/>
@@ -488,14 +651,13 @@
         <image name="NoodlesButton" width="153" height="109"/>
         <image name="Polygon 2" width="29" height="30"/>
         <image name="RandomButton" width="153" height="109"/>
-        <image name="Re-spin_" width="163" height="35"/>
-        <image name="Rectangle 10" width="266" height="106"/>
         <image name="Rectangle 11" width="325" height="355"/>
         <image name="Rectangle 18" width="6" height="31"/>
         <image name="Rectangle 19" width="230" height="49"/>
         <image name="Rectangle 20" width="230" height="49"/>
         <image name="Rectangle 21" width="230" height="49"/>
         <image name="Remove Options" width="142" height="19"/>
+        <image name="Respin" width="266" height="106"/>
         <image name="Result background" width="1080" height="1920"/>
         <image name="Result_" width="157" height="40"/>
         <image name="RiceButton" width="153" height="109"/>
