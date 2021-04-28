@@ -402,16 +402,8 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Result_" translatesAutoresizingMaskIntoConstraints="NO" id="Co1-ui-5Xq">
-                                <rect key="frame" x="87" y="86" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Rectangle 11" translatesAutoresizingMaskIntoConstraints="NO" id="ZKM-9K-UmI">
-                                <rect key="frame" x="26" y="222" width="363" height="362"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Your Food Result" translatesAutoresizingMaskIntoConstraints="NO" id="Jf5-6T-rky">
-                                <rect key="frame" x="87" y="549" width="240" height="128"/>
+                                <rect key="frame" x="59" y="236" width="297" height="296"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CSW-6s-aut">
@@ -422,6 +414,20 @@
                                     <segue destination="HlF-eI-vCS" kind="show" id="yEh-eP-Kg6"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Result:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opV-eo-UOE">
+                                <rect key="frame" x="93" y="114" width="229" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Bold" family="Bodoni 72 Oldstyle" pointSize="80"/>
+                                <color key="textColor" red="0.73102890659999997" green="0.17906462100000001" blue="0.0061741922129999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Food Result" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AbU-xo-Igm">
+                                <rect key="frame" x="68" y="566" width="279" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="40"/>
+                                <color key="textColor" red="0.73102890661818964" green="0.1790646210003202" blue="0.0061741922128195339" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YdR-4g-MDL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -432,10 +438,14 @@
                             <constraint firstItem="fFK-OI-TGT" firstAttribute="leading" secondItem="YdR-4g-MDL" secondAttribute="leading" id="vT5-3D-c9I"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="foodResultImage" destination="ZKM-9K-UmI" id="Ysi-5P-4eu"/>
+                        <outlet property="foodResultLabel" destination="AbU-xo-Igm" id="WfA-UF-AIe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vkv-90-H6Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1103" y="2303"/>
+            <point key="canvasLocation" x="1102.8985507246377" y="2302.9017857142858"/>
         </scene>
         <!--Cravings-->
         <scene sceneID="9e3-5r-VNO">
@@ -675,11 +685,9 @@
         <image name="Remove Options" width="142" height="19"/>
         <image name="Respin" width="266" height="106"/>
         <image name="Result background" width="1080" height="1920"/>
-        <image name="Result_" width="157" height="40"/>
         <image name="RiceButton" width="153" height="109"/>
         <image name="VeggiesButton" width="153" height="109"/>
         <image name="WheelUnselected" width="25" height="25"/>
-        <image name="Your Food Result" width="197" height="21"/>
         <image name="wheelSelected" width="25" height="25"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
