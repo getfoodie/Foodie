@@ -68,7 +68,7 @@ Foodie allows users to decide what to eat based on what they are craving for, bu
 - [x] Results
    - [x] Respin button
    - [x] Results Page Images
-   - [x] Display Results
+   - [ ] Display Results
    - [ ] Connect Wheel Results to Image displayed
 
 
