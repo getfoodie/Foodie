@@ -53,9 +53,9 @@ Foodie allows users to decide what to eat based on what they are craving for, bu
 - [x] Questions/Craving Screen
    - [ ] Buttons  
 - [x] Wheel
-   - [ ]  
+   - [ ] Buttons 
 - [x] Results
-   - [ ]  
+   - [ ] Buttons 
 
 
 **Optional Nice-to-have Stories**
