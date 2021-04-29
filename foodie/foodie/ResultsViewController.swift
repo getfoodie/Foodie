@@ -15,13 +15,13 @@ class ResultsViewController: UIViewController {
     let randNum = Int.random(in: 0...6)
     var foodChoice = ["Meat", "Veggies", "Carbs", "Drinks", "Soups", "Desserts", "Fast Food"]
     var foodImage: [UIImage] = [
-        UIImage(named:"meats")!,
-        UIImage(named:"veggie")!,
-        UIImage(named:"carbs")!,
-        UIImage(named:"drink")!,
-        UIImage(named:"soup")!,
-        UIImage(named:"desserts")!,
-        UIImage(named: "fast food")!
+        UIImage(named:"Meats_Result")!,
+        UIImage(named:"Veggie_Results")!,
+        UIImage(named:"Carbs_Result")!,
+        UIImage(named:"Drinks_Result")!,
+        UIImage(named:"Soups_Result")!,
+        UIImage(named:"Desserts_Result")!,
+        UIImage(named:"FastFood_Results")!
     ]
     var updateLabel = true
     
