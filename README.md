@@ -51,14 +51,25 @@ Foodie allows users to decide what to eat based on what they are craving for, bu
 **Required Must-have Stories**
 
 - [x] Questions/Craving Screen
-   - [x] Food option buttons
-      - [ ] Function of buttons(jumps to wheel screen)
+   - [x] Cravings Buttons
+   - [x] Cravings Images
+   - [x] Tab Button
+   - [x] Navigation Bar
+   - [x] Connect Cravings Buttons to Wheels
+   - [ ] Connect Cravings Buttons to corresponding Wheels
+
 - [x] Wheel
-   - [x] Wheel buttons
-      - [ ] Function of buttons(spin, add/remove options)
+   - [x] Spin/Add/Remove Buttons
+   - [x] Wheel Images
+   - [ ] Spinning Wheel
+   - [ ] Add options
+   - [ ] Remove options
+
 - [x] Results
    - [x] Respin button
-      - [x] Function of button
+   - [x] Results Page Images
+   - [x] Display Results
+   - [ ] Connect Wheel Results to Image displayed
 
 
 **Optional Nice-to-have Stories**
