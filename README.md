@@ -51,11 +51,11 @@ Foodie allows users to decide what to eat based on what they are craving for, bu
 **Required Must-have Stories**
 
 - [x] Questions/Craving Screen
-   - [ ] Buttons  
+   - [x] Food option buttons  
 - [x] Wheel
-   - [ ] Buttons 
+   - [x] Buttons: spin, add/remove options
 - [x] Results
-   - [ ] Buttons 
+   - [x] Respin button
 
 
 **Optional Nice-to-have Stories**
