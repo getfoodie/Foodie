@@ -3,12 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3A5CCE44544AE978D6EE3CA8 /* Pods_foodie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBBEAA512EF37DB2A5AAE70B /* Pods_foodie.framework */; };
 		87518A67CF4DE045563BA2C3 /* Pods_foodie_foodieUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 807920C940350BC4761B442F /* Pods_foodie_foodieUITests.framework */; };
+		971E2D20264480B80077FB27 /* SFWConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971E2D1F264480B80077FB27 /* SFWConfiguration.swift */; };
 		97913F1B2628AB52000622B5 /* WheelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97913F1A2628AB52000622B5 /* WheelViewController.swift */; };
 		B2956066262908AF0038D4C6 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2956065262908AF0038D4C6 /* ResultsViewController.swift */; };
 		D7BD21E7243386D57B95E178 /* Pods_foodieTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D098C686950D4E999DF6074D /* Pods_foodieTests.framework */; };
@@ -48,6 +49,7 @@
 		70BD421567F0E6D1D3EDEE14 /* Pods-foodie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodie.release.xcconfig"; path = "Target Support Files/Pods-foodie/Pods-foodie.release.xcconfig"; sourceTree = "<group>"; };
 		807920C940350BC4761B442F /* Pods_foodie_foodieUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_foodie_foodieUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		816E949D458C651D7CF2B5C6 /* Pods-foodieTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodieTests.debug.xcconfig"; path = "Target Support Files/Pods-foodieTests/Pods-foodieTests.debug.xcconfig"; sourceTree = "<group>"; };
+		971E2D1F264480B80077FB27 /* SFWConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFWConfiguration.swift; sourceTree = "<group>"; };
 		97913F1A2628AB52000622B5 /* WheelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelViewController.swift; sourceTree = "<group>"; };
 		AB65EF2F9A78BA26DADFFD58 /* Pods-foodie-foodieUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodie-foodieUITests.release.xcconfig"; path = "Target Support Files/Pods-foodie-foodieUITests/Pods-foodie-foodieUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B2956065262908AF0038D4C6 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
@@ -111,7 +113,6 @@
 				816E949D458C651D7CF2B5C6 /* Pods-foodieTests.debug.xcconfig */,
 				EC6B5CE5D81AE98418065361 /* Pods-foodieTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -162,6 +163,7 @@
 				F6AB1CDD26288E5700455372 /* CravingsViewController.swift */,
 				97913F1A2628AB52000622B5 /* WheelViewController.swift */,
 				B2956065262908AF0038D4C6 /* ResultsViewController.swift */,
+				971E2D1F264480B80077FB27 /* SFWConfiguration.swift */,
 			);
 			path = foodie;
 			sourceTree = "<group>";
@@ -424,6 +426,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F64B312A261FA73E00878340 /* ViewController.swift in Sources */,
+				971E2D20264480B80077FB27 /* SFWConfiguration.swift in Sources */,
 				F6AB1CDE26288E5700455372 /* CravingsViewController.swift in Sources */,
 				97913F1B2628AB52000622B5 /* WheelViewController.swift in Sources */,
 				B2956066262908AF0038D4C6 /* ResultsViewController.swift in Sources */,
