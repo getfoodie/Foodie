@@ -56,11 +56,14 @@ Foodie allows users to decide what to eat based on what they are craving for, bu
    - [x] Tab Button
    - [x] Navigation Bar
    - [x] Connect Cravings Buttons to Wheels
+   - [x] Create and import new Figma assets
    - [ ] Connect Cravings Buttons to corresponding Wheels
 
 - [x] Wheel
    - [x] Spin/Add/Remove Buttons
    - [x] Wheel Images
+   - [x] Research on implementation of possible Spinning Wheels
+   - [x] Install SpinWheelControl pod for possible Spinning Wheel
    - [ ] Spinning Wheel
    - [ ] Add options
    - [ ] Remove options
@@ -68,7 +71,7 @@ Foodie allows users to decide what to eat based on what they are craving for, bu
 - [x] Results
    - [x] Respin button
    - [x] Results Page Images
-   - [ ] Display Results
+   - [x] Display Results
    - [ ] Connect Wheel Results to Image displayed
 
 
@@ -136,6 +139,9 @@ Foodie allows users to decide what to eat based on what they are craving for, bu
 <img src="http://g.recordit.co/EQM2U45Yke.gif?fbclid=IwAR2KidRwpkuSp1VIxmqsN90b8RjV2ymSqkRT_GhED0DFc9tWOczvyhxBe3I" width=600>
 
 ### Unit 11 
+<img src="http://g.recordit.co/SHjr2wJi5F.gif" width=600>
+
+### Unit 12 
 <img src="http://g.recordit.co/SHjr2wJi5F.gif" width=600>
 
 ## Schema 
