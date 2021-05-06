@@ -64,7 +64,9 @@ Foodie allows users to decide what to eat based on what they are craving for, bu
    - [x] Wheel Images
    - [x] Research on implementation of possible Spinning Wheels
    - [x] Install SpinWheelControl pod for possible Spinning Wheel
-   - [ ] Spinning Wheel
+   - [x] Spinning Wheel Implementation
+      - [x] Research on Spinning Wheel 
+      - [x] Install SwiftFortuneWheel pod    
    - [ ] Add options
    - [ ] Remove options
 
@@ -143,6 +145,10 @@ Foodie allows users to decide what to eat based on what they are craving for, bu
 
 ### Unit 12 
 <img src="http://g.recordit.co/jdg1TX8Fhv.gif" width=600>
+
+### Unit 13 
+<img src="http://g.recordit.co/9zst1MY0QC.gif" width=600>
+
 
 ## Schema 
 
