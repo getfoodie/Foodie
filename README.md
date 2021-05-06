@@ -142,7 +142,7 @@ Foodie allows users to decide what to eat based on what they are craving for, bu
 <img src="http://g.recordit.co/SHjr2wJi5F.gif" width=600>
 
 ### Unit 12 
-<img src="http://g.recordit.co/SHjr2wJi5F.gif" width=600>
+<img src="http://g.recordit.co/jdg1TX8Fhv.gif" width=600>
 
 ## Schema 
 
