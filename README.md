@@ -127,7 +127,7 @@ Foodie allows users to decide what to eat based on what they are craving for, bu
 
 
 ## Wireframes
-<img src="https://github.com/getfoodie/Foodie/blob/main/FoodieWireframes.png" width=600>
+<img src="https://github.com/getfoodie/Foodie/blob/main/FoodieWireframes.png" width=300>
 
 
 
@@ -135,19 +135,19 @@ Foodie allows users to decide what to eat based on what they are craving for, bu
 <img src="https://github.com/getfoodie/Foodie/blob/main/DigitalWireframes.png" width=600>
 
 ### [BONUS] Interactive Prototype
-<img src="http://g.recordit.co/JyBGpkpIGh.gif" width=600>
+<img src="http://g.recordit.co/JyBGpkpIGh.gif" width=300>
 
 ### Unit 10 
-<img src="http://g.recordit.co/EQM2U45Yke.gif?fbclid=IwAR2KidRwpkuSp1VIxmqsN90b8RjV2ymSqkRT_GhED0DFc9tWOczvyhxBe3I" width=600>
+<img src="http://g.recordit.co/EQM2U45Yke.gif?fbclid=IwAR2KidRwpkuSp1VIxmqsN90b8RjV2ymSqkRT_GhED0DFc9tWOczvyhxBe3I" width=300>
 
 ### Unit 11 
-<img src="http://g.recordit.co/SHjr2wJi5F.gif" width=600>
+<img src="http://g.recordit.co/SHjr2wJi5F.gif" width=300>
 
 ### Unit 12 
-<img src="http://g.recordit.co/jdg1TX8Fhv.gif" width=600>
+<img src="http://g.recordit.co/jdg1TX8Fhv.gif" width=300>
 
 ### Unit 13 
-<img src="http://g.recordit.co/9zst1MY0QC.gif" width=600>
+<img src="http://g.recordit.co/9zst1MY0QC.gif" width=300>
 
 
 ## Schema 
