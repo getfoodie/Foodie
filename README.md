@@ -127,7 +127,7 @@ Foodie allows users to decide what to eat based on what they are craving for, bu
 
 
 ## Wireframes
-<img src="https://github.com/getfoodie/Foodie/blob/main/FoodieWireframes.png" width=300>
+<img src="https://github.com/getfoodie/Foodie/blob/main/FoodieWireframes.png" width=600>
 
 
 
