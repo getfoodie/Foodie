@@ -52,34 +52,34 @@ class WheelViewController: UIViewController {
         }
     
     
-    @IBAction func BackOnClick(_ sender: UIButton) {
-        performSegue(withIdentifier: "backToHome", sender: UIButton.self)
-    }
+        @IBAction func BackOnClick(_ sender: UIButton) {
+            performSegue(withIdentifier: "backToHome", sender: UIButton.self)
+        }
     
-    @IBAction func SpinOnClick(_ sender: UIButton) {
-        print("Click to Spin Button was clicked")
+        @IBAction func SpinOnClick(_ sender: UIButton) {
+            foodWheel.startRotationAnimation(finishIndex: 0, continuousRotationTime: 1) { (finished) in
+                        print(finished)
+            }
+            print("Click to Spin Button was clicked")
         
        // foodWheel.startRotationAnimation(finishIndex: finishIndex, continuousRotationTime: 1) { (finished) in
          //           print(finished)
-        foodWheel.startRotationAnimation(finishIndex: 0, continuousRotationTime: 1) { (finished) in
-                        print(finished)
         }
-    }
     
         func AddOnClick(_ sender: UIButton) {
         print("Add Options Button was clicked")
-    }
+        }
     
         func RemoveOnClick(_ sender: UIButton) {
         print("Remove Options Button was clicked")
-    }
+        }
     
     
-    override func viewDidLoad() {
+        override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-    }
+        }
     
 
     /*
