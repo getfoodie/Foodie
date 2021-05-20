@@ -1,15 +1,16 @@
 //
-//  WheelViewController.swift
+//  MeatViewController.swift
 //  foodie
 //
-//  Created by Kailey Van on 4/15/21.
+//  Created by Kailey Van on 5/19/21.
 //
 
 import UIKit
 import SwiftFortuneWheel
 
-class WheelViewController: UIViewController {
+class MeatViewController: UIViewController {
 
+    
     @IBOutlet weak var centerView: UIView!{
             didSet {
                 centerView.layer.cornerRadius = centerView.bounds.width / 2
@@ -18,19 +19,17 @@ class WheelViewController: UIViewController {
             }
         }
     
-    
-    
-    @IBOutlet weak var foodWheel: SwiftFortuneWheel!
+    @IBOutlet weak var meatWheel: SwiftFortuneWheel!
     
     {
             didSet {
-                foodWheel.configuration = .variousWheelSimpleConfiguration
-                foodWheel.slices = slices
-                foodWheel.pinImage = "whitePinArrow"
+                meatWheel.configuration = .variousWheelSimpleConfiguration
+                meatWheel.slices = slices
+                meatWheel.pinImage = "whitePinArrow"
                 
-                foodWheel.pinImageViewCollisionEffect = CollisionEffect(force: 8, angle: 20)
+                meatWheel.pinImageViewCollisionEffect = CollisionEffect(force: 8, angle: 20)
                 
-                foodWheel.edgeCollisionDetectionOn = true
+                meatWheel.edgeCollisionDetectionOn = true
             }
         }
         
@@ -43,11 +42,12 @@ class WheelViewController: UIViewController {
         }()
 
         var finishIndex: Int {
-            return Int.random(in: 0..<foodWheel.slices.count)
+            return Int.random(in: 0..<meatWheel.slices.count)
         }
 
         override func viewDidLoad() {
             super.viewDidLoad()
+
             // Do any additional setup after loading the view.
         }
         
@@ -56,30 +56,15 @@ class WheelViewController: UIViewController {
             centerView.layer.cornerRadius = centerView.bounds.width / 2
         }
     
-    
-        @IBAction func BackOnClick(_ sender: UIButton) {
-            performSegue(withIdentifier: "backToHome", sender: UIButton.self)
-        }
-    
-        @IBAction func SpinOnClick(_ sender: Any) {
-            foodWheel.startRotationAnimation(finishIndex: finishIndex, continuousRotationTime: 1) { (finished) in
-                        print(finished)
-        }
-        print("Click to Spin Button was clicked")
         
-       // foodWheel.startRotationAnimation(finishIndex: finishIndex, continuousRotationTime: 1) { (finished) in
-         //           print(finished)
+    
+    @IBAction func SpinOnClick(_ sender: Any) {
+        meatWheel.startRotationAnimation(finishIndex: finishIndex, continuousRotationTime: 1) { (finished) in
+                    print(finished)
     }
     
-        func AddOnClick(_ sender: UIButton) {
-        print("Add Options Button was clicked")
-        }
-    
-        func RemoveOnClick(_ sender: UIButton) {
-        print("Remove Options Button was clicked")
-        }
-    
-    
+  
+    }
 
     /*
     // MARK: - Navigation
@@ -92,4 +77,3 @@ class WheelViewController: UIViewController {
     */
 
 }
-

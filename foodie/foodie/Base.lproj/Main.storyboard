@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ybx-GI-9ON">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ybx-GI-9ON">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -154,7 +154,7 @@
                                 <state key="normal" image="MeatsButton"/>
                                 <connections>
                                     <action selector="MeatsOnClick:" destination="dpX-Nh-R8v" eventType="touchUpInside" id="qjC-Hk-gbt"/>
-                                    <segue destination="HlF-eI-vCS" kind="show" id="pcN-MU-8Md"/>
+                                    <action selector="meat:" destination="wfh-Zk-3M3" eventType="touchUpInside" id="Vpe-9T-DVP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NW6-XW-yrq" userLabel="Drink Button">
@@ -162,7 +162,6 @@
                                 <state key="normal" image="DrinksButton"/>
                                 <connections>
                                     <action selector="DrinksOnClick:" destination="dpX-Nh-R8v" eventType="touchUpInside" id="5Os-gM-Mv1"/>
-                                    <segue destination="HlF-eI-vCS" kind="show" id="0sj-Um-5cc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dkc-Xv-609" userLabel="Soup Button">
@@ -316,6 +315,7 @@
                     <navigationItem key="navigationItem" title="Cravings" id="C5O-dh-pz1"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XVc-VC-7RH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="wfh-Zk-3M3" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-630" y="1580"/>
         </scene>
@@ -440,18 +440,6 @@
                                 <rect key="frame" x="150" y="610" width="112" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Add Options" translatesAutoresizingMaskIntoConstraints="NO" id="LF7-4t-8D9">
-                                <rect key="frame" x="151" y="668" width="110" height="19"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Rectangle 21" translatesAutoresizingMaskIntoConstraints="NO" id="2fC-BC-EYf">
-                                <rect key="frame" x="91" y="709" width="230" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Remove Options" translatesAutoresizingMaskIntoConstraints="NO" id="Uyb-vH-TuX">
-                                <rect key="frame" x="135" y="724" width="142" height="19"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Random" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhV-9N-NaL">
                                 <rect key="frame" x="175" y="156" width="86" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -464,21 +452,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="SpinOnClick:" destination="HlF-eI-vCS" eventType="touchUpInside" id="hsY-34-l5s"/>
-                                    <segue destination="Qgn-aD-9xN" kind="show" id="e9G-hF-hmT"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g4q-eY-1OX" userLabel="Add Button">
-                                <rect key="frame" x="91" y="652" width="230" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="AddOnClick:" destination="HlF-eI-vCS" eventType="touchUpInside" id="bpi-gF-43n"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fsy-Qu-wK1" userLabel="Remove Button">
-                                <rect key="frame" x="90" y="728" width="231" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="RemoveOnClick:" destination="HlF-eI-vCS" eventType="touchUpInside" id="H1r-n1-8kX"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qZO-8c-jkS" userLabel="View" customClass="SwiftFortuneWheel" customModule="SwiftFortuneWheel">
@@ -503,6 +476,17 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isSpinEnabled" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lQu-3h-ThR">
+                                <rect key="frame" x="91" y="653" width="230" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Kollektif" family="Kollektif" pointSize="18"/>
+                                <state key="normal" title="View Results">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Qgn-aD-9xN" kind="show" id="829-RV-mZ1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="He0-Ry-bTT"/>
                         <color key="backgroundColor" red="0.79066124445645602" green="0.79922508210239773" blue="0.87820226495916187" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -516,7 +500,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y5v-bP-MvR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-630" y="2303"/>
+            <point key="canvasLocation" x="-630.43478260869574" y="2302.9017857142858"/>
         </scene>
         <!--Results View Controller-->
         <scene sceneID="zcj-Hg-UdF">
@@ -579,7 +563,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="e9G-hF-hmT"/>
         <segue reference="iuf-Rj-4dy"/>
         <segue reference="LdF-IX-nCe"/>
     </inferredMetricsTieBreakers>
