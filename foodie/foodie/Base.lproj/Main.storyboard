@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ybx-GI-9ON">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="s0N-TR-nm7">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,117 +13,6 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Spin the Wheel!-->
-        <scene sceneID="wrP-bG-Kol">
-            <objects>
-                <viewController modalPresentationStyle="fullScreen" id="eeI-Yc-gd9" customClass="WheelViewController" customModule="foodie" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="gTu-fe-UhZ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Rectangle 20" translatesAutoresizingMaskIntoConstraints="NO" id="xdp-Uj-Vfp">
-                                <rect key="frame" x="91" y="623" width="230" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Rectangle 19" translatesAutoresizingMaskIntoConstraints="NO" id="u2s-T9-Q1X">
-                                <rect key="frame" x="91" y="565" width="230" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Click to Spin!" translatesAutoresizingMaskIntoConstraints="NO" id="XeZ-pW-e1f">
-                                <rect key="frame" x="150" y="580" width="112" height="19"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Add Options" translatesAutoresizingMaskIntoConstraints="NO" id="x4p-EU-6Kk">
-                                <rect key="frame" x="151" y="638" width="110" height="19"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Rectangle 21" translatesAutoresizingMaskIntoConstraints="NO" id="Hl3-Hw-8c0">
-                                <rect key="frame" x="91" y="679" width="230" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Remove Options" translatesAutoresizingMaskIntoConstraints="NO" id="Ily-Hf-xQt">
-                                <rect key="frame" x="135" y="694" width="142" height="19"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsP-JB-OwM" userLabel="Spin Button">
-                                <rect key="frame" x="90" y="565" width="231" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="SpinOnClick:" destination="eeI-Yc-gd9" eventType="touchUpInside" id="A7o-yL-743"/>
-                                    <segue destination="nMH-fk-4b0" kind="show" id="z9L-AT-co3"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vlE-wR-cTZ" userLabel="Add Button">
-                                <rect key="frame" x="91" y="622" width="230" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="AddOnClick:" destination="eeI-Yc-gd9" eventType="touchUpInside" id="uIi-wv-735"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Euc-6r-IKb" userLabel="Remove Button">
-                                <rect key="frame" x="90" y="698" width="231" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="RemoveOnClick:" destination="eeI-Yc-gd9" eventType="touchUpInside" id="eoT-6X-rQ3"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Random" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BgQ-hb-Egb">
-                                <rect key="frame" x="151" y="116" width="111" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iKE-Bb-UjR" userLabel="View" customClass="SwiftFortuneWheel" customModule="SwiftFortuneWheel">
-                                <rect key="frame" x="32" y="178" width="350" height="350"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mag-Lp-iJu" userLabel="foodWheel">
-                                        <rect key="frame" x="0.0" y="0.0" width="350" height="350"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yf4-fP-GVW" userLabel="CenterView">
-                                                <rect key="frame" x="115" y="115" width="120" height="120"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.98611037260000001" green="0.80607640069999997" blue="0.99135767490000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            </view>
-                                        </subviews>
-                                    </view>
-                                </subviews>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="pinImage" value="long-arrow-up"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="spinTitle" value="SPIN"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSpinEnabled" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="xef-3M-kMs"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Wheel" image="WheelUnselected" selectedImage="wheelSelected" id="yNF-wS-wcy"/>
-                    <navigationItem key="navigationItem" title="Spin the Wheel!" id="gMV-uC-dWx"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KGF-rW-6cC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1102.8985507246377" y="1579.6875"/>
-        </scene>
-        <!--Item-->
-        <scene sceneID="PPS-UG-a2H">
-            <objects>
-                <navigationController id="rPE-F5-sIK" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="WheelUnselected" selectedImage="wheelSelected" id="nXn-m6-cTW"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GXX-SQ-JSw">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="eeI-Yc-gd9" kind="relationship" relationship="rootViewController" id="Q7K-k4-VYe"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Wxy-4R-HEg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1103" y="840"/>
-        </scene>
         <!--Cravings-->
         <scene sceneID="ZNJ-Za-H6Z">
             <objects>
@@ -319,65 +208,6 @@
             </objects>
             <point key="canvasLocation" x="-630" y="1580"/>
         </scene>
-        <!--Results View Controller-->
-        <scene sceneID="iBR-Df-x9u">
-            <objects>
-                <viewController modalPresentationStyle="fullScreen" id="nMH-fk-4b0" customClass="ResultsViewController" customModule="foodie" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="cdf-0i-uUX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Result background" translatesAutoresizingMaskIntoConstraints="NO" id="fFK-OI-TGT">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CSW-6s-aut">
-                                <rect key="frame" x="74" y="653" width="266" height="106"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Respin"/>
-                                <connections>
-                                    <segue destination="eeI-Yc-gd9" kind="show" id="LdF-IX-nCe"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Result:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opV-eo-UOE">
-                                <rect key="frame" x="93" y="114" width="229" height="96"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Bold" family="Bodoni 72 Oldstyle" pointSize="80"/>
-                                <color key="textColor" red="0.73102890659999997" green="0.17906462100000001" blue="0.0061741922129999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Food Result" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AbU-xo-Igm">
-                                <rect key="frame" x="68" y="566" width="279" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="40"/>
-                                <color key="textColor" red="0.73102890661818964" green="0.1790646210003202" blue="0.0061741922128195339" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Rectangle 11" translatesAutoresizingMaskIntoConstraints="NO" id="ZKM-9K-UmI">
-                                <rect key="frame" x="92" y="258" width="230" height="230"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="YdR-4g-MDL"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="fFK-OI-TGT" firstAttribute="top" secondItem="YdR-4g-MDL" secondAttribute="top" id="6IL-Ps-bhw"/>
-                            <constraint firstItem="YdR-4g-MDL" firstAttribute="trailing" secondItem="fFK-OI-TGT" secondAttribute="trailing" id="rst-qX-CBf"/>
-                            <constraint firstItem="YdR-4g-MDL" firstAttribute="bottom" secondItem="fFK-OI-TGT" secondAttribute="bottom" id="tmg-7s-xPh"/>
-                            <constraint firstItem="fFK-OI-TGT" firstAttribute="leading" secondItem="YdR-4g-MDL" secondAttribute="leading" id="vT5-3D-c9I"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="Bk6-Md-UoN"/>
-                    <connections>
-                        <outlet property="foodResultImage" destination="ZKM-9K-UmI" id="Ysi-5P-4eu"/>
-                        <outlet property="foodResultLabel" destination="AbU-xo-Igm" id="WfA-UF-AIe"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Vkv-90-H6Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1102.8985507246377" y="2302.9017857142858"/>
-        </scene>
         <!--Cravings-->
         <scene sceneID="9e3-5r-VNO">
             <objects>
@@ -395,24 +225,6 @@
             </objects>
             <point key="canvasLocation" x="-630" y="841"/>
         </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="K9p-gh-57W">
-            <objects>
-                <tabBarController modalPresentationStyle="fullScreen" id="Ybx-GI-9ON" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fAS-QZ-zIJ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="s0N-TR-nm7" kind="relationship" relationship="viewControllers" id="4Mh-WJ-Kik"/>
-                        <segue destination="rPE-F5-sIK" kind="relationship" relationship="viewControllers" id="Cpe-ey-Wvb"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PPh-sg-Hvq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="243" y="22"/>
-        </scene>
         <!--Wheel-->
         <scene sceneID="dbx-Ul-QCz">
             <objects>
@@ -422,40 +234,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Spin the Wheel!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GLb-sL-aJ1">
-                                <rect key="frame" x="105" y="87" width="205" height="61"/>
+                                <rect key="frame" x="103" y="87" width="205" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Rectangle 20" translatesAutoresizingMaskIntoConstraints="NO" id="tto-4P-gGh">
-                                <rect key="frame" x="91" y="653" width="230" height="49"/>
+                                <rect key="frame" x="91" y="658" width="230" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Rectangle 19" translatesAutoresizingMaskIntoConstraints="NO" id="TzF-rJ-OLh">
-                                <rect key="frame" x="91" y="595" width="230" height="49"/>
+                                <rect key="frame" x="91" y="600" width="230" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Click to Spin!" translatesAutoresizingMaskIntoConstraints="NO" id="vPK-O6-wjc">
-                                <rect key="frame" x="150" y="610" width="112" height="19"/>
+                                <rect key="frame" x="150" y="615" width="112" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Random" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhV-9N-NaL">
-                                <rect key="frame" x="175" y="156" width="86" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aek-95-Xgh" userLabel="Spin Button">
-                                <rect key="frame" x="90" y="595" width="231" height="49"/>
+                                <rect key="frame" x="90" y="600" width="231" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="SpinOnClick:" destination="HlF-eI-vCS" eventType="touchUpInside" id="hsY-34-l5s"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qZO-8c-jkS" userLabel="View" customClass="SwiftFortuneWheel" customModule="SwiftFortuneWheel">
-                                <rect key="frame" x="32" y="207" width="350" height="350"/>
+                                <rect key="frame" x="32" y="212" width="350" height="350"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a0E-zp-qWs" userLabel="foodWheel">
@@ -477,9 +282,9 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lQu-3h-ThR">
-                                <rect key="frame" x="91" y="653" width="230" height="49"/>
+                                <rect key="frame" x="91" y="658" width="230" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Kollektif" family="Kollektif" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="Kollektif" family="Kollektif" pointSize="20"/>
                                 <state key="normal" title="View Results">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -487,6 +292,13 @@
                                     <segue destination="Qgn-aD-9xN" kind="show" id="829-RV-mZ1"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Random" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhV-9N-NaL">
+                                <rect key="frame" x="162" y="143" width="86" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="He0-Ry-bTT"/>
                         <color key="backgroundColor" red="0.79066124445645602" green="0.79922508210239773" blue="0.87820226495916187" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -563,11 +375,10 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="829-RV-mZ1"/>
         <segue reference="iuf-Rj-4dy"/>
-        <segue reference="LdF-IX-nCe"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="Add Options" width="110" height="19"/>
         <image name="Click to Spin!" width="112" height="19"/>
         <image name="CravingsSelected" width="20" height="23"/>
         <image name="CravingsUnselected" width="20" height="23"/>
@@ -580,8 +391,6 @@
         <image name="Rectangle 11" width="325" height="355"/>
         <image name="Rectangle 19" width="230" height="49"/>
         <image name="Rectangle 20" width="230" height="49"/>
-        <image name="Rectangle 21" width="230" height="49"/>
-        <image name="Remove Options" width="142" height="19"/>
         <image name="Respin" width="266" height="106"/>
         <image name="Result background" width="1080" height="1920"/>
         <image name="RiceButton" width="153" height="109"/>
